@@ -3,7 +3,12 @@
   "version": "0.99.1",
   "description": "run express as a dpd resource",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:maninga/dpd-express.git"
+  },
   "author": "Ritchie Martori",
+  "private": true,
   "license": "MIT",
   "dependencies": {
     "express": "~4.13.3"
