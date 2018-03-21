@@ -23,6 +23,8 @@ module.exports = Express;
 Express.prototype.handle = function (ctx, next) {
   ctx.req.dpd = ctx.dpd;
   ctx.req.me = ctx.session && ctx.session.user;
+  ctx.req.isRoot = ctx.session && ctx.session.isRoot;
+  
   this.app.call(this.server, ctx.req, ctx.res);
   if(ctx.res._finished) {
     next();
